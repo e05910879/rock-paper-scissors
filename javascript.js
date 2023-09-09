@@ -61,10 +61,10 @@ function game() {
     let computerChoice = getComputerChoice();
     let result = playRound(playerChoice, computerChoice);
     console.log(result);
-    let outcome = result.slice(4,7);
-    if (outcome === 'win') {
+    let outcome = result.slice(4,5);
+    if (outcome === 'w') {
         playerScore++;
-    } else if (outcome === 'lose') {
+    } else if (outcome === 'l') {
         computerScore++;
     }
 
@@ -72,10 +72,10 @@ function game() {
     computerChoice = getComputerChoice();
     result = playRound(playerChoice, computerChoice);
     console.log(result);
-    outcome = result.slice(4,7);
-    if (outcome === 'win') {
+    outcome = result.slice(4,5);
+    if (outcome === 'w') {
         playerScore++;
-    } else if (outcome === 'lose') {
+    } else if (outcome === 'l') {
         computerScore++;
     }
     
@@ -83,10 +83,10 @@ function game() {
     computerChoice = getComputerChoice();
     result = playRound(playerChoice, computerChoice);
     console.log(result);
-    outcome = result.slice(4,7);
-    if (outcome === 'win') {
+    outcome = result.slice(4,5);
+    if (outcome === 'w') {
         playerScore++;
-    } else if (outcome === 'lose') {
+    } else if (outcome === 'l') {
         computerScore++;
     }
 
@@ -94,10 +94,10 @@ function game() {
     computerChoice = getComputerChoice();
     result = playRound(playerChoice, computerChoice);
     console.log(result);
-    outcome = result.slice(4,7);
-    if (outcome === 'win') {
+    outcome = result.slice(4,5);
+    if (outcome === 'w') {
         playerScore++;
-    } else if (outcome === 'lose') {
+    } else if (outcome === 'l') {
         computerScore++;
     }
 
@@ -105,10 +105,10 @@ function game() {
     computerChoice = getComputerChoice();
     result = playRound(playerChoice, computerChoice);
     console.log(result);
-    outcome = result.slice(4,7);
-    if (outcome === 'win') {
+    outcome = result.slice(4,5);
+    if (outcome === 'w') {
         playerScore++;
-    } else if (outcome === 'lose') {
+    } else if (outcome === 'l') {
         computerScore++;
     }
 
