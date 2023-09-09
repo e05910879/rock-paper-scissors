@@ -56,60 +56,21 @@ function declareWinner(playerScore, computerScore) {
 function game() {
     let playerScore = 0;
     let computerScore = 0;
+    let playerChoice;
+    let computerChoice;
+    let result;
 
-    let playerChoice = prompt("Rock, paper, or scissors?");
-    let computerChoice = getComputerChoice();
-    let result = playRound(playerChoice, computerChoice);
-    console.log(result);
-    let outcome = result.slice(4,5);
-    if (outcome === 'w') {
-        playerScore++;
-    } else if (outcome === 'l') {
-        computerScore++;
-    }
-
-    playerChoice = prompt("Rock, paper, or scissors?");
-    computerChoice = getComputerChoice();
-    result = playRound(playerChoice, computerChoice);
-    console.log(result);
-    outcome = result.slice(4,5);
-    if (outcome === 'w') {
-        playerScore++;
-    } else if (outcome === 'l') {
-        computerScore++;
-    }
-    
-    playerChoice = prompt("Rock, paper, or scissors?");
-    computerChoice = getComputerChoice();
-    result = playRound(playerChoice, computerChoice);
-    console.log(result);
-    outcome = result.slice(4,5);
-    if (outcome === 'w') {
-        playerScore++;
-    } else if (outcome === 'l') {
-        computerScore++;
-    }
-
-    playerChoice = prompt("Rock, paper, or scissors?");
-    computerChoice = getComputerChoice();
-    result = playRound(playerChoice, computerChoice);
-    console.log(result);
-    outcome = result.slice(4,5);
-    if (outcome === 'w') {
-        playerScore++;
-    } else if (outcome === 'l') {
-        computerScore++;
-    }
-
-    playerChoice = prompt("Rock, paper, or scissors?");
-    computerChoice = getComputerChoice();
-    result = playRound(playerChoice, computerChoice);
-    console.log(result);
-    outcome = result.slice(4,5);
-    if (outcome === 'w') {
-        playerScore++;
-    } else if (outcome === 'l') {
-        computerScore++;
+    for (let i = 1; i <= 5; i++) {
+        playerChoice = prompt("Rock, paper, or scissors?");
+        computerChoice = getComputerChoice();
+        result = playRound(playerChoice, computerChoice);
+        console.log(result);
+        let outcome = result.slice(4,5);
+        if (outcome === 'w') {
+            playerScore++;
+        } else if (outcome === 'l') {
+            computerScore++;
+        }
     }
 
     declareWinner(playerScore, computerScore);
