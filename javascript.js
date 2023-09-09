@@ -42,3 +42,65 @@ function playRound(playerSelection, computerSelection)
         } return "You tied! Scissors ties scissors";
     }
 }
+
+function game() {
+    let playerScore = 0;
+    let computerScore = 0;
+
+    let playerChoice = prompt("Rock, paper, or scissors?");
+    let computerChoice = getComputerChoice();
+    let result = playRound(playerChoice, computerChoice);
+    console.log(result);
+    let outcome = result.slice(4,7);
+    if (outcome === 'win') {
+        playerScore++;
+    } else if (outcome === 'lose') {
+        computerScore++;
+    }
+
+    playerChoice = prompt("Rock, paper, or scissors?");
+    computerChoice = getComputerChoice();
+    result = playRound(playerChoice, computerChoice);
+    console.log(result);
+    outcome = result.slice(4,7);
+    if (outcome === 'win') {
+        playerScore++;
+    } else if (outcome === 'lose') {
+        computerScore++;
+    }
+    
+    playerChoice = prompt("Rock, paper, or scissors?");
+    computerChoice = getComputerChoice();
+    result = playRound(playerChoice, computerChoice);
+    console.log(result);
+    outcome = result.slice(4,7);
+    if (outcome === 'win') {
+        playerScore++;
+    } else if (outcome === 'lose') {
+        computerScore++;
+    }
+
+    playerChoice = prompt("Rock, paper, or scissors?");
+    computerChoice = getComputerChoice();
+    result = playRound(playerChoice, computerChoice);
+    console.log(result);
+    outcome = result.slice(4,7);
+    if (outcome === 'win') {
+        playerScore++;
+    } else if (outcome === 'lose') {
+        computerScore++;
+    }
+
+    playerChoice = prompt("Rock, paper, or scissors?");
+    computerChoice = getComputerChoice();
+    result = playRound(playerChoice, computerChoice);
+    console.log(result);
+    outcome = result.slice(4,7);
+    if (outcome === 'win') {
+        playerScore++;
+    } else if (outcome === 'lose') {
+        computerScore++;
+    }
+
+    declareWinner(playerScore, computerScore);
+}
