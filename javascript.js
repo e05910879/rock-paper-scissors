@@ -59,8 +59,9 @@ function game() {
     let playerChoice;
     let computerChoice;
     let result;
+    const NUMROUNDS = 5;
 
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= NUMROUNDS; i++) {
         playerChoice = prompt("Rock, paper, or scissors?");
         computerChoice = getComputerChoice();
         result = playRound(playerChoice, computerChoice);
