@@ -76,3 +76,21 @@ function game() {
 
     declareWinner(playerScore, computerScore);
 }
+
+function mainMenu() {
+    const body = document.querySelector('body');
+
+    const testTitle = document.createElement('h1');
+    testTitle.textContent = 'Hello, World!';
+    body.appendChild(testTitle);
+
+    const playButton = document.createElement('button');
+    playButton.textContent = 'Play';
+    body.appendChild(playButton); 
+}
+
+function main() {
+    mainMenu();
+}
+
+main();
