@@ -81,7 +81,7 @@ let computerScore = 0;
 let noWinnerYet = true;
 
 scoreNumbers.textContent = `${playerScore}-${computerScore}`;
-scoreMessage.textContent = 'Howdy!';
+scoreMessage.textContent = "Let's play!";
 
 rockButton.addEventListener('click', () => {playRound('rock', getComputerChoice())});
 paperButton.addEventListener('click', () => {playRound('paper', getComputerChoice())});
