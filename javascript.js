@@ -76,11 +76,3 @@ function game() {
 
     declareWinner(playerScore, computerScore);
 }
-
-const body = document.querySelector('body');
-const playButton = document.querySelector('.play-button');
-playButton.addEventListener('click', () => {
-    while (body.firstChild) {
-        body.removeChild(body.firstChild);
-    }
-});
