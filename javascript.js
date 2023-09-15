@@ -77,20 +77,12 @@ function game() {
     declareWinner(playerScore, computerScore);
 }
 
-function mainMenu() {
-    const body = document.querySelector('body');
+const rockButton = document.querySelector('.rock');
+const paperButton = document.querySelector('.paper');
+const scissorsButton = document.querySelector('.scissors');
+const scoreNumbers = document.querySelector('.score-numbers');
 
-    const testTitle = document.createElement('h1');
-    testTitle.textContent = 'Hello, World!';
-    body.appendChild(testTitle);
+let playerScore = 0;
+let computerScore = 0;
+scoreNumbers.textContent = `${playerScore}-${computerScore}`;
 
-    const playButton = document.createElement('button');
-    playButton.textContent = 'Play';
-    body.appendChild(playButton); 
-}
-
-function main() {
-    mainMenu();
-}
-
-main();
